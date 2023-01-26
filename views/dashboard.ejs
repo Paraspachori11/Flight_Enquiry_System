@@ -1,0 +1,51 @@
+<style>
+    .box1{
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        border-radius: 15px;
+    }
+    .box2{
+        background: #237;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myframe{
+        width: 80%;
+        height: 80%;
+        border-top-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+</style>
+<html>
+    <head>
+        <title>Dashboard Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row" style="background: #ffb8b8;border-radius: 15px;">
+            <div class="col-md-12 box1">
+                <div style="display: flex;width: 30%;"><i>Dashboard</i></div>
+                <div style="display: flex;justify-content: center;width: 40%;">
+                    <div style="width: 20%;"><a target="show" href="/flightenquiry/flightinterface" style="text-decoration: none;font-size: 20px;color: black;">Add Flights</a></div>
+                    <div style="width: 20%;"><a target="show" href="/flightenquiry/displayflightdata" style="text-decoration: none;font-size: 20px;color: black;">Show Flights</a></div>
+                    <div style="width: 20%;"><a href="/admin/logout" style="text-decoration: none;font-size: 20px;color: black;">Log out</a></div>
+                </div>
+                <div style="display: flex;justify-content: end;width: 30%;"><%=data.email%></div>
+            </div>
+        </div>
+        <div class="col-md-12 box2">
+            <iframe name="show" frameborder="0" class="myframe"></iframe>
+        </div>
+    </body>
+</html>
