@@ -2,7 +2,8 @@
     .container1{
        height: 100vh;
        width: 100vw;
-       background: rgb(61, 52, 137);
+       /* background: rgb(61, 52, 137); */
+       background: rgb(255, 255, 255);
        display: flex;
        justify-content: center;
        align-items: center;
@@ -21,14 +22,18 @@
     }
     .container4{
         border: #237;
-        border-width: 5px;
+        border-width: 2px;
         border-style: solid;
         width: 25vw;
         border-radius: 10px;
-        height:auto
+        height:auto,
     }
     .buttonstyle{
         width: 50%;
+    }
+    .gif{
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
     }
 </style>
 <html>
@@ -39,12 +44,12 @@
     <div class="container1">
         <div class="extra">
         <div class="container2">
-            <span><img src="/images/yo.gif" width="100%"></span>
+            <span><img src="/images/yo.gif" width="100%" class="gif"></span>
             <span class="container3">
-                <div style="margin-top: 10px;font-weight: bold;font-size: 23px;margin-bottom: 45px;">WELCOME To Flight Enquiry System</div>
+                <div style="margin-top: 10px;font-weight: bold;font-size: 28px;margin-bottom: 45px;font-family: 'Courier New', Courier, monospace;text-align: center;">WELCOME To Flight Enquiry System</div>
                 <center><div class="container4">
                 <center><div style="margin-top: 20px;font-weight: bold;font-size: 20px;color: #237;
-                margin-bottom: 10px;">ADMINISTRATOR LOGIN</div></center>
+                margin-bottom: 10px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Admin Login</div></center>
 
                 <form action="/admin/checkinfo" method="post">
                     <center>
